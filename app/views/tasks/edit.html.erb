@@ -1,0 +1,12 @@
+<h2>EDIT THE TASK</h2>
+
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+  <%= check_box_tag(:completed) %>
+  <%= label_tag(:completed, "completed") %>
+  <%= f.submit %>
+<% end %>
